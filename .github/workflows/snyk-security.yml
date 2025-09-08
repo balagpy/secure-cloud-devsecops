@@ -1,7 +1,9 @@
-name: Snyk Scan
+name: Snyk Dependency Scan
 
 on:
   push:
+    branches: [main]
+  pull_request:
     branches: [main]
   workflow_dispatch: {}
 
@@ -11,27 +13,21 @@ jobs:
     permissions:
       contents: read
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "18"
 
-      - uses: actions/checkout@master
+      - name: Install dependencies
+        run: npm install
+
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          go-version: '1.19'
-      - name: Snyk test
-        run: snyk test
-        
-
-      # TODO: Implement Snyk scanning for this repository.
-      # - Install Snyk CLI
-      # - Authenticate with SNYK_TOKEN GitHub secret
-      # - Install app dependencies in 'app' and run test
-      # - Optionally run code test
-      #- name: TODO - Implement Snyk scanning
-        #run: echo "TODO: Implement Snyk scanning (OSS and optional Code) for the 'app' project."
+          command: test
+          args: --all-projects --severity-threshold=high
