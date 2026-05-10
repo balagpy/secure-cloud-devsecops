@@ -1,8 +1,8 @@
-# Bild — Senior Security Engineer Live Task Repo (AWS + Snyk)
+# DevSecOps — Senior Security Engineer Practice Live Task (AWS + Snyk)
 
 **Scenario**: Secure a small app + AWS footprint under time pressure.
 
-## What you’ll do (during call)
+## Task
 1. Review `infra/` and call out at least 3 misconfigurations.
 2. Make S3 **private** and enable **default encryption (SSE‑KMS)**.
 3. Replace the wildcard IAM policy with a **least‑privilege** policy for only the app’s needs (S3 GetObject/PutObject/ListBucket on one bucket).
