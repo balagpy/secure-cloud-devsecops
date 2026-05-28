@@ -1,5 +1,7 @@
 # secure-cloud-devsecops
 
+Temporary branch update for Chmod SCM-native PR status verification.
+
 Practical DevSecOps Security Lab
 
 Scenario: Harden vulnerable AWS infrastructure and app dependencies.
