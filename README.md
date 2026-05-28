@@ -1,5 +1,7 @@
 # secure-cloud-devsecops
 
+Temporary branch update for Chmod SCM-native PR status verification.
+
 Practical DevSecOps Security Lab
 
 Scenario: Harden vulnerable AWS infrastructure and app dependencies.
@@ -40,3 +42,16 @@ terraform plan -var "app_bucket_name=bild-pdm-demo-CHANGE_ME"
 
 ## Disclaimer
 This repository is for security training and interview practice only. It contains intentionally insecure patterns for learning purposes and must not be used in production without a full security review, hardening, and organizational compliance validation.
+
+SCM webhook re-test update at 2026-05-28T14:49:12Z
+SCM webhook final re-test at 2026-05-28T15:06:39Z
+SCM installation-refresh retest at 2026-05-28T15:30:59Z
+SCM installation-id sync retest at 2026-05-28T15:32:29Z
+SCM metadata-fix retest at 2026-05-28T15:35:51Z
+SCM workflow-mode retest at 2026-05-28T15:40:30Z
+SCM async-start retest at 2026-05-28T15:49:45Z
+SCM check-run retest at 2026-05-28T15:58:10Z
+SCM check-run permission retest at 2026-05-28T16:07:20Z
+SCM check-run findings-count retest at 2026-05-28T16:27:21Z
+SCM check-run findings-fallback retest at 2026-05-28T16:32:13Z
+SCM check-run app-link retest at 2026-05-28T16:47:50Z
