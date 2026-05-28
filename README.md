@@ -52,3 +52,4 @@ SCM workflow-mode retest at 2026-05-28T15:40:30Z
 SCM async-start retest at 2026-05-28T15:49:45Z
 SCM check-run retest at 2026-05-28T15:58:10Z
 SCM check-run permission retest at 2026-05-28T16:07:20Z
+SCM check-run findings-count retest at 2026-05-28T16:27:21Z
