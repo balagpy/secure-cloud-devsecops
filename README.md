@@ -47,3 +47,4 @@ SCM webhook re-test update at 2026-05-28T14:49:12Z
 SCM webhook final re-test at 2026-05-28T15:06:39Z
 SCM installation-refresh retest at 2026-05-28T15:30:59Z
 SCM installation-id sync retest at 2026-05-28T15:32:29Z
+SCM metadata-fix retest at 2026-05-28T15:35:51Z
